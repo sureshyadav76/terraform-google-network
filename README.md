@@ -23,7 +23,6 @@ To get started, make sure you have configured your GCP provider. You can use the
 ```hcl
 module "network" {
   source                                    = "git::https://github.com/sureshyadav76/terraform-google-network.git"
-  version                                   = "1.0.1"
   name                                      = "app"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
