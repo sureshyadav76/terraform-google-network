@@ -2,8 +2,7 @@ data "google_client_config" "current" {
 }
 
 module "labels" {
-  source      = "sureshyadav76/labels/google"
-  version     = "1.0.1"
+  source      = "git::https://github.com/sureshyadav76/terraform-google-labels.git?ref=v1.0.0"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
